@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <title>Günlük Takip Programı</title>
+  <link rel="manifest" href="./manifest.json">
+<meta name="theme-color" content="#4caf50">
 <!-- ⭐ EN İYİ SÜRÜM (STABLE) – Bu sürüm referans alınarak geliştirilecektir -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
@@ -392,6 +394,14 @@ restoreBtn.onclick=()=>{
   monthInput.dispatchEvent(new Event('change'));
 
 });
+<script>
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("./service-worker.js")
+      .then(() => console.log("Service Worker kayıtlı"))
+      .catch(err => console.error("SW hata:", err));
+  });
+}
 </script>
 </body>
 </html>
