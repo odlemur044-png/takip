@@ -1,6 +1,7 @@
 {
-  "name": "Günlük Takip",
+  "name": "Günlük Takip Programı",
   "short_name": "Takip",
+  "description": "Günlük görevlerinizi takip edin.",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
