@@ -1,12 +1,10 @@
-const CACHE_NAME = 'gunluk-takip-cache-v1';
-const urlsToCache = [
-  '/',
-  '/index.html',  // Adjust paths based on your app's structure
-  '/styles.css',
-  '/script.js',
-  '/icons/icon-192x192.png',
-  '/icons/icon-512x512.png',
-  // Add any other static files you need to cache
+const CACHE_NAME = "takip-cache-v1";
+const FILES_TO_CACHE = [
+  "./",
+  "./index.html",
+  "./manifest.json",
+  "./icons/icon-192.png",
+  "./icons/icon-512.png"
 ];
 
 // Install the service worker and cache necessary resources
